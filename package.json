@@ -1,7 +1,7 @@
 {
   "name": "nextjs14-ts-mui-template",
   "description": "Next.js 14 with TypeScript and Material UI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "keywords": [
     "nextjs",
