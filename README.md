@@ -31,12 +31,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## TODO
 
+- SCSS
+- Message i18n
+- SWR / react-query
+- E2E cypress
 - CI
-- scss
-- message i18n
-- SSE
-- cypress
-- axios mock
 
 ## Note
 
