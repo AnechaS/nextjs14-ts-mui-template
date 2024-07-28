@@ -21,6 +21,8 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "commit": "cz",
+    "release": "standard-version --header=",
     "prepare": "husky"
   },
   "dependencies": {
@@ -57,6 +59,8 @@
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
     "eslint-config-prettier": "^9.1.0",
@@ -67,9 +71,15 @@
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.40",
     "prettier": "^3.3.3",
+    "standard-version": "^9.5.0",
     "storybook": "^8.2.6",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.4",
     "whatwg-fetch": "^3.6.20"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
