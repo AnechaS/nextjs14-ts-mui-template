@@ -1,7 +1,5 @@
 {
-  "plugins": [
-    "@typescript-eslint/eslint-plugin"
-  ],
+  "plugins": ["@typescript-eslint/eslint-plugin"],
   "extends": [
     "next/core-web-vitals",
     "plugin:prettier/recommended",
@@ -19,7 +17,5 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off"
   },
-  "ignorePatterns": [
-    "**/*.config.js"
-  ]
+  "ignorePatterns": ["**/*.config.js"]
 }
