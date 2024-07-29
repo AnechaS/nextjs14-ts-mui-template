@@ -3,7 +3,9 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import CssBaseline from '@mui/material/CssBaseline';
 import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
+import messages from '@/common/messages';
 import setupAxios from '@/common/setup-axios';
+import LanguageProvider from '@/components/language-provider';
 import StoreProvider from '@/components/store-provider';
 import theme from '@/theme';
 import './globals.css';
@@ -25,7 +27,9 @@ export default function RootLayout(props: Readonly<{ children: React.ReactNode }
               {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
               <CssBaseline />
               <StoreProvider>
-                <main>{props.children}</main>
+                <LanguageProvider messages={messages}>
+                  <main>{props.children}</main>
+                </LanguageProvider>
               </StoreProvider>
             </ThemeProvider>
           </StyledEngineProvider>
